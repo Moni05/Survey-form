@@ -1,0 +1,67 @@
+.mandatory-data:after{
+    content: '*';
+    color: red;
+}
+
+p, label.mandatory-data{
+    font-weight: 700;
+    font-family: Arial;
+    font-size: 20px;
+}
+.caption{
+    font-family: Arial;
+    color: rgb(119 118 118);
+}
+.hide{
+    display: none;
+}
+ th{
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 18px;
+ }
+
+.forms{
+    margin: 20px;
+}
+
+.comment {
+    height: 150px !important;
+}
+
+#submit {
+    width: 85px;
+    height: 50px;
+    border: 2px solid transparent;
+}
+
+.clear {
+    float: none;
+    clear: both;
+}
+
+.rating{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 200px;
+}
+
+label.star:before {
+    content: '\f006';
+    font-family: 'FontAwesome';
+}
+
+label.star {
+    font-size: 40px;
+    margin: 2px;
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label:before {
+    content: '\f005';
+    color: #cf6912a6;
+}
+
+th, tr > td:nth-child(2), tr > td:nth-child(3), tr > td:nth-child(4), tr > td:nth-child(5), tr > td:nth-child(6) {
+    text-align: center;
+}
